@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/normal"
+    android:id="@+id/main_audio_view"
+    android:paddingBottom="27dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/iv_separator"
+        android:src="@drawable/cart_separatoor" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+    
+        <TextView
+        android:id="@+id/tv_videoWatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/tv_title"
+        android:text="تم الإستماع لهذا الدرس من قبل"
+        android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_videoWatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/tv_title"
+        android:layout_toLeftOf="@+id/tv_videoWatched"
+        android:src="@drawable/video_watched_lv"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_red"
+        android:layout_centerHorizontal="true"
+        android:text="انهاء الدرس"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
